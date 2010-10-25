@@ -1,0 +1,15 @@
+cache
+data/sql
+log
+web/uploads/*
+lib/form/doctrine/base
+lib/form/doctrine/*/base
+lib/filter/doctrine/base
+lib/filter/doctrine/*/base
+lib/model/doctrine/base
+lib/model/doctrine/*/base
+config/databases.yml
+.DS_Store
+
+#IDE files
+.idea

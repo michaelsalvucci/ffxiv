@@ -1,10 +1,15 @@
 SETUP INSTRUCTIONS:
 ===================
 
-mkdir cache
-chmod 777 cache
+$ mkdir cache
+$ chmod 777 cache
 
-mkdir log
-chmod 777 log
+$ mkdir log
+$ chmod 777 log
+
+$ cd config
+$ cp databases.yml.template databases.yml
+
+Edit databases.yml with your password.
 
 
