@@ -1,0 +1,10 @@
+SETUP INSTRUCTIONS:
+===================
+
+mkdir cache
+chmod 777 cache
+
+mkdir log
+chmod 777 log
+
+
