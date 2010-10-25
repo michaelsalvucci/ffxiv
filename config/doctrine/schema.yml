@@ -1,0 +1,32 @@
+ffLeve:
+  options:
+    orderBy:                 name ASC
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+#    product_id:
+#      type:                  integer(4)
+#      notnull:               true
+    name:                    string(255)
+    issuing_authority:
+      type:                  string(255)
+      notnull:               true
+    leve_duration:           string(255)
+    recommended_classes:     string(255)
+    levequest_location:      string(255)
+    objectives:              string(255)
+    favor_required:          integer(4)
+  actAs:
+    Timestampable:
+    Sluggable:
+#  relations:
+#    Product:
+#      type:                  one
+#      foreignType:           many
+#      class:                 myProduct
+#      foreignAlias:          ProductImages
+#      local:                 product_id
+#      onDelete:              cascade
+
