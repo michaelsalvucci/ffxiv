@@ -1,0 +1,5 @@
+ffItem:
+  item_1:
+    name:                'foobar'
+    type:                'armor'
+

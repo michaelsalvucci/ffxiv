@@ -1,3 +1,15 @@
+ffItem:
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+    name:                    string(255)
+    type:
+      type:                  enum
+      values:                ['armor', 'weapon', 'tool', 'food', 'potion', 'ingredient', 'training', 'currency']
+      notnull:               false
+
 ffLeve:
   options:
     orderBy:                 name ASC
