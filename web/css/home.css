@@ -1,0 +1,14 @@
+html { background-color: #e0e0d0; font-family: Verdana, "Times New Roman", Arial; }
+
+body { background-color: #eeeedd; padding: 12px; }
+
+p { background-color: #00ff00; margin-right: 10px; padding: 2px; padding-left: 10px; padding-right: 10px; top: 38px; right: 155px; border: 1px solid #393a4e; width: 120px; }
+
+div.leve-box { width: 520px; background-color: #000000; }
+div.leve-top { background-color: #eeeedd; background-image:url('/images/leve-top.png'); color: #ffff00; font-size: 15px; padding: 25px 25px 0px 25px; }
+div.leve-mid { background-color: #eeeedd; background-image:url('/images/leve-mid.png'); color: #ffff00; font-size: 12px; padding: 25px 25px 0px 25px; }
+div.leve-btm { width: 520px; background-color: #eeeedd; background-image:url('/images/leve-btm.png'); }
+div.divider { background-color: #333366; height: 1px; width: 480px; margin: 4px 0px 4px 0px; }
+div.leve-detail { padding: 0px 0px 0px 24px; color: #eeeedd; }
+div.card-border { background-position: -48px -1px; float: right; height: 245px; margin: 0px; padding: 0px; position: relative; width: 154px; vertical-align: baseline; display: block; }
+div.card-box { background-position: -48px 14px; height: 245px; margin: 0px 0 0 0; padding: 0px; position: absolute; left: 372px; top 0px; width: 154px; vertical-align: baseline; display: block; }

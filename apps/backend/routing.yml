@@ -1,0 +1,13 @@
+        sf_guard_signin:
+          url:   /login
+          param: { module: sfGuardAuth, action: signin }
+        
+        sf_guard_signout:
+          url:   /logout
+          param: { module: sfGuardAuth, action: signout }
+        
+        sf_guard_password:
+          url:   /request_password
+          param: { module: sfGuardAuth, action: password }
+# You can customize the `url` parameter of each route.
+#    N.B.: You must have a `@homepage` routing rule (used when a user sign out)

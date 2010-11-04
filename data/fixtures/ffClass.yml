@@ -1,0 +1,82 @@
+ffClass:
+  class_1:
+    name:                    'alchemist'
+    abbreviation:            'ALC'
+    position:                19
+  class_2:
+    name:                    'archer'
+    abbreviation:            'ARC'
+    position:                17
+  class_3:
+    name:                    'armorer'
+    abbreviation:            'ARM'
+    position:                3
+  class_4:
+    name:                    'blacksmith'
+    abbreviation:            'BSM'
+    position:                18
+  class_5:
+    name:                    'botanist'
+    abbreviation:            'BTN'
+    position:                12
+  class_6:
+    name:                    'carpenter'
+    abbreviation:            'CRP'
+    position:                14
+  class_7:
+    name:                    'conjurer'
+    abbreviation:            'CON'
+    position:                6
+  class_8:
+    name:                    'culinarian'
+    abbreviation:            'CUL'
+    position:                4
+  class_9:
+    name:                    'fisher'
+    abbreviation:            'FSH'
+    position:                16
+  class_10:
+    name:                    'gladiator'
+    abbreviation:            'GLA'
+    position:                1
+  class_11:
+    name:                    'goldsmith'
+    abbreviation:            'GLD'
+    position:                7
+  class_12:
+    name:                    'lancer'
+    abbreviation:            'LNC'
+    position:                13
+  class_13:
+    name:                    'leatherworker'
+    abbreviation:            'TAN'
+    position:                11
+  class_14:
+    name:                    'marauder'
+    abbreviation:            'MRD'
+    position:                9
+  class_15:
+    name:                    'miner'
+    abbreviation:            'MIN'
+    position:                8
+  class_16:
+    name:                    'pugilist'
+    abbreviation:            'PGL'
+    position:                5
+  class_17:
+    name:                    'shield'
+    abbreviation:            'SHD'
+    position:                2 
+  class_18:
+    name:                    'thaumaturge'
+    abbreviation:            'THM'
+    position:                10
+  class_19:
+    name:                    'weaver'
+    abbreviation:            'WVR'
+    position:                15
+  class_20:
+    name:                    'physical'
+    abbreviation:            'PHY'
+    position:                20
+

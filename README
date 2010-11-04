@@ -1,5 +1,21 @@
+INTRODUCTION:
+=============
+ffxiv is a Final Fantasy XIV web application.  It uses Symfony 1.4.
+
+
+
+
+
 SETUP INSTRUCTIONS:
 ===================
+$ mkdir lib
+$ mkdir lib/vendor
+
+$ wget http://www.symfony-project.org/get/symfony-1.4.8.tgz
+$ gunzip -d symfony-1.4.8.tgz
+$ tar -xvf symfony-1.4.8.tar
+$ cp -furvp symfony-1.4.8/* lib/vendor/symfony/
+$ rm -rf symfony-1.4.8
 
 $ mkdir cache
 $ chmod 777 cache
@@ -7,9 +23,36 @@ $ chmod 777 cache
 $ mkdir log
 $ chmod 777 log
 
-$ cd config
-$ cp databases.yml.template databases.yml
+$ cp config/databases.yml.template config/databases.yml
 
-Edit databases.yml with your password.
+Edit config/databases.yml with your password.
+$ vi config/databases.yml
 
+Edit sfGuard username and password
+$ vi data/fixtures/sfGuard.yml
+
+$ ./symfony plugin:install sfDoctrineGuardPlugin
+# After this plugin is installed, you may add it to config/ProjectConfiguration.php
+
+  1 # Be sure to only have this line once in your configuration
+  2 #NameVirtualHost 127.0.0.1:8080
+  3
+  4 # This is the configuration for your project
+  5 #Listen 127.0.0.1:8080
+  6
+  7 <VirtualHost *:80>
+  8   ServerName ffxiv.local
+  9   DocumentRoot "/home/michael/_GIT/ffxiv/web"
+ 10   DirectoryIndex index.php
+ 11   <Directory "/home/michael/_GIT/ffxiv/web">
+ 12     AllowOverride All
+ 13     Allow from All
+ 14   </Directory>
+ 15
+ 16   Alias /sf /home/michael/_GIT/ffxiv/lib/vendor/symfony/vendor/data/web/sf
+ 17   <Directory "/home/michael/_GIT/ffxiv/lib/vendor/symfony/vendor/data/web/sf">
+ 18     AllowOverride All
+ 19     Allow from All
+ 20   </Directory>
+ 21 </VirtualHost>
 

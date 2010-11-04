@@ -1,0 +1,37 @@
+ffServer:
+  server_1:
+    name:                'Besaid'
+  server_2:
+    name:                'Bodhum'
+  server_3:
+    name:                'Cornelia'
+  server_4:
+    name:                'Fatul'
+  server_5:
+    name:                'Figaro'
+  server_6:
+    name:                'Gysahl'
+  server_7:
+    name:                'Istory'
+  server_8:
+    name:                'Karnak'
+  server_9:
+    name:                'Kashuan'
+  server_10:
+    name:                'Lindblum'
+  server_11:
+    name:                'Melmond'
+  server_12:
+    name:                'Mysidia'
+  server_13:
+    name:                'Palamecia'
+  server_14:
+    name:                'Rabanastre'
+  server_15:
+    name:                'Saronia'
+  server_16:
+    name:                'Selbina'
+  server_17:
+    name:                'Trabia'
+  server_18:
+    name:                'Wutai'

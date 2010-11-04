@@ -1,3 +1,19 @@
+ffClass:
+  options:
+    orderBy:                 position ASC
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+    name:
+      type:                  enum
+      values:                ['alchemist', 'archer', 'armorer', 'blacksmith', 'botanist', 'carpenter', 'conjurer', 'culinarian', 'fisher', 'gladiator', 'goldsmith', 'lancer', 'leatherworker', 'marauder', 'miner', 'pugilist', 'thaumaturge', 'weaver']
+      notnull:               true
+    abbreviation:
+      type:                  string(255)
+    position:                integer(4)
+
 ffItem:
   columns:
     id:
@@ -22,14 +38,20 @@ ffLeve:
 #      type:                  integer(4)
 #      notnull:               true
     name:                    string(255)
-    issuing_authority:
+    type:
+      type:                  enum
+      values:                ['local','regional']
+    poc:
       type:                  string(255)
-      notnull:               true
-    leve_duration:           string(255)
+    description:             string(1023)
+    objectives:              string(1023)
+    reward:                  string(1023)
+    issuing_authority:       string(255)
+    duration:                string(255)
     recommended_classes:     string(255)
     levequest_location:      string(255)
-    objectives:              string(255)
     favor_required:          integer(4)
+    deliver_to:              string(255)
   actAs:
     Timestampable:
     Sluggable:
@@ -41,4 +63,43 @@ ffLeve:
 #      foreignAlias:          ProductImages
 #      local:                 product_id
 #      onDelete:              cascade
+
+ffServer:
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+    name:
+      type:                  enum
+      values:                ['Besaid', 'Bodhum', 'Cornelia', 'Fatul', 'Figaro', 'Gysahl', 'Istory', 'Karnak', 'Kashuan', 'Lindblum', 'Melmond', 'Mysidia', 'Palamecia', 'Rabanastre', 'Saronia', 'Selbina', 'Trabia', 'Wutai']
+      notnull:               false
+
+
+
+
+#ffChecklistLeve:
+#  options:
+#    orderBy:                 position ASC
+#  columns:
+#    id:
+#      type:                  integer(4)
+#      primary:               true
+#      autoincrement:         true
+#    user_id:
+#      type:                  integer(4)
+#      notnull:               true
+#    position:                integer(4)
+#    visited:                 boolean
+#  actAs:
+#    Timestampable:
+#  relations:
+#    Product:
+#      type:                  one
+#      foreignType:           many
+#      class:                 ffUser
+#      foreignAlias:          ChecklistLeves
+#      local:                 user_id
+#      onDelete:              cascade
+
 

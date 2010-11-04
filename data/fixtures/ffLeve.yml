@@ -1,0 +1,47 @@
+ffLeve:
+  leve_1:
+    name:                    'Chalk on Ice'
+    type:                    'local'
+    poc:                     ''
+    description:             |
+                             todo
+    objectives:              |
+                             todo<br />
+                             todo<br />
+    reward:                  |
+                             todo<br />
+                             todo<br />
+    issuing_authority:       |
+                             Ul'dah Adventurers' Guild
+    duration:                'Up to 36 hours'
+    recommended_classes:     'Alchemist'
+    levequest_location:      |
+                             Ul'dah Merchant Strip
+    favor_required:          10
+    deliver_to:              'Claroise'
+  leve_2:
+    name:                    'A Blind Fool'
+    type:                    'local'
+    poc:                     'Seventy-seven Caravans Stockist, Claroise Auberle'
+    description:             |
+                             When transporting a crate of potent blinding powder from a Seventy-seven Caravans warehouse to the chocobo carriage set to carry the shipment to Vesper Bay, a porter tripped on a loose cobble and fell head-first into the box, temporarily blinding himself with the substance. When he regained his sight and his senses, he found that someone had made off with the crate. To replace the lost items, Caravan stockist Claroise Auberle is seeking capable alchemists to create a new batch of powder from materials taken from the trader's warehouses.
+    objectives:              |
+                             Create and deliver the following items:<br />
+                             Rank 1: Rubber Sole x 6<br />
+                             Rank 5: Beeswax x 36<br />
+                             Rank 5: Rubber x 12<br />
+                             Rank 5: Quicksilver x 60<br />
+    reward:                  |
+                             Rank 1: Latex x 4<br />
+                             Rank 5: Minium x 12<br />
+                             Rank 5: Silex x 12<br />
+                             Rank 5: Yellow Ginseng x 12<br />
+    issuing_authority:       |
+                             Ul'dah Adventurers' Guild
+    duration:                'Up to 36 hours'
+    recommended_classes:     'Alchemist'
+    levequest_location:      |
+                             Ul'dah Merchant Strip
+    favor_required:          10
+    deliver_to:              'Claroise'
+

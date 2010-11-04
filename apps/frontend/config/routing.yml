@@ -4,7 +4,11 @@
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: home, action: index }
+
+leve_individual:
+  url:   /leve/:id
+  param: { module: leve, action: individual }
 
 # generic rules
 # please, remove them by adding more specific rules
@@ -14,3 +18,4 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
