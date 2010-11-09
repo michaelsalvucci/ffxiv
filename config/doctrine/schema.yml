@@ -55,14 +55,14 @@ ffLeve:
   actAs:
     Timestampable:
     Sluggable:
-#  relations:
-#    Product:
-#      type:                  one
-#      foreignType:           many
-#      class:                 myProduct
-#      foreignAlias:          ProductImages
-#      local:                 product_id
-#      onDelete:              cascade
+  relations:
+    CheckedBy:
+      type:                  one
+      foreignType:           many
+      class:                 ffLeveChecklist
+      foreignAlias:          ffLeve2LeveChecklist
+      local:                 id
+      onDelete:              cascade
 
 ffServer:
   columns:
@@ -78,28 +78,28 @@ ffServer:
 
 
 
-#ffChecklistLeve:
-#  options:
-#    orderBy:                 position ASC
-#  columns:
-#    id:
-#      type:                  integer(4)
-#      primary:               true
-#      autoincrement:         true
-#    user_id:
-#      type:                  integer(4)
-#      notnull:               true
-#    position:                integer(4)
-#    visited:                 boolean
-#  actAs:
-#    Timestampable:
-#  relations:
-#    Product:
-#      type:                  one
-#      foreignType:           many
-#      class:                 ffUser
-#      foreignAlias:          ChecklistLeves
-#      local:                 user_id
-#      onDelete:              cascade
+ffLeveChecklist:
+  options:
+    orderBy:                 position ASC
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+    user_id:
+      type:                  integer(4)
+      notnull:               true
+    position:                integer(4)
+    is_visited:              boolean
+  actAs:
+    Timestampable:
+  relations:
+    Users:
+      type:                  many
+      foreignType:           one
+      class:                 sfGuardUser
+      local:                 user_id
+      foreign:               id
+      foreignAlias:          sfGuardUser2LeveChecklist
 
 

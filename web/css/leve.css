@@ -1,0 +1,9 @@
+html { background-color: #e0e0d0; font-family: Verdana, "Times New Roman", Arial; }
+
+body { background-color: #eeeedd; padding: 12px; }
+
+p { background-color: #00ff00; margin-right: 10px; padding: 2px; padding-left: 10px; padding-right: 10px; top: 38px; right: 155px; border: 1px solid #393a4e; width: 120px; }
+
+div.even { background-color: #ffffff; }
+div.odd { background-color: #cccccc; }
+

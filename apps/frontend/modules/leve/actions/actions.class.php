@@ -22,6 +22,9 @@ class leveActions extends sfActions
     // Not sure if this is needed
     //$this->page = $this->getRoute()->getObject();
 
+    #$this->getUser()->getGuardUser()->getUsername();
+    $this->username = $this->getUser()->getGuardUser()->getUsername();
+
   }
 
  /**

@@ -1,5 +1,7 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/08-Security
 
+# If you switch the is_secure entry to true, the entire backend application will require the user to be authenticated.
+
 default:
   is_secure: false
