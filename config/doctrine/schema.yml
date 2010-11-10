@@ -64,6 +64,51 @@ ffLeve:
       local:                 id
       onDelete:              cascade
 
+ffLeveChecklist:
+#  inheritance:
+#    type:                    concrete
+#    extends:                 ffLeve
+  options:
+    orderBy:                 position ASC
+  columns:
+    id:
+      type:                  integer(4)
+      primary:               true
+      autoincrement:         true
+    leve_id:
+      type:                  integer(4)
+      notnull:               true
+    user_id:
+      type:                  integer(4)
+      notnull:               true
+    position:                integer(4)
+    is_visited:              boolean
+  indexes:
+    leve_user_idx:
+      fields:                [leve_id, user_id]
+      primary:               true
+  actAs:
+    Timestampable:
+  relations:
+    ffLeves:
+      type:                  many
+      foreignType:           one
+      class:                 ffLeve
+      local:                 leve_id
+      foreign:               id
+      foreignAlias:          ffLeve2ffLeveChecklist
+    Users:
+      type:                  many
+      foreignType:           one
+      class:                 sfGuardUser
+      local:                 user_id
+      foreign:               id
+      foreignAlias:          sfGuardUser2LeveChecklist
+
+
+
+
+
 ffServer:
   columns:
     id:
@@ -74,32 +119,5 @@ ffServer:
       type:                  enum
       values:                ['Besaid', 'Bodhum', 'Cornelia', 'Fatul', 'Figaro', 'Gysahl', 'Istory', 'Karnak', 'Kashuan', 'Lindblum', 'Melmond', 'Mysidia', 'Palamecia', 'Rabanastre', 'Saronia', 'Selbina', 'Trabia', 'Wutai']
       notnull:               false
-
-
-
-
-ffLeveChecklist:
-  options:
-    orderBy:                 position ASC
-  columns:
-    id:
-      type:                  integer(4)
-      primary:               true
-      autoincrement:         true
-    user_id:
-      type:                  integer(4)
-      notnull:               true
-    position:                integer(4)
-    is_visited:              boolean
-  actAs:
-    Timestampable:
-  relations:
-    Users:
-      type:                  many
-      foreignType:           one
-      class:                 sfGuardUser
-      local:                 user_id
-      foreign:               id
-      foreignAlias:          sfGuardUser2LeveChecklist
 
 

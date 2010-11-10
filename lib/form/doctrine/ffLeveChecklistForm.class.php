@@ -12,5 +12,14 @@ class ffLeveChecklistForm extends BaseffLeveChecklistForm
 {
   public function configure()
   {
+
+    $this->useFields(array(
+      'leve_id',
+      'user_id',
+      'is_visited'
+    ));
+
+
+
   }
 }

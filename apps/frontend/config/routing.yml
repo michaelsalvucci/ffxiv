@@ -38,9 +38,34 @@ leve_individual:
   url:   /leve/:id
   param: { module: leve, action: individual }
 
-leveChecklist:
-  class:  sfDoctrineRouteCollection
-  options: { model: leveChecklist }
+#leveChecklist:
+#  class:  sfDoctrineRouteCollection
+#  options: { model: leveChecklist }
+
+#leveChecklist:
+#  class:  sfDoctrineRouteCollection
+#  options:
+#    model: ffLeveChecklist
+##    column: token
+#    object_actions: { publish: PUT, extend: PUT }
+##  requirements:
+##    token: \w+
+
+ffLeveChecklist_new:
+  url:                       /leveChecklist/new
+  param:                     { module: leveChecklist, action: new }
+ffLeveChecklist_create:
+  url:                       /leveChecklist/create
+  param:                     { module: leveChecklist, action: create }
+#ffLeveChecklist_show:
+#  url:                       /leveChecklist/show
+#  param:                     { module: leveChecklist, action: show }
+
+ffLeveChecklist_edit:
+  url:                       /leveChecklist/edit
+  param:                     { module: leveChecklist, action: edit }
+
+
 
 # generic rules
 # please, remove them by adding more specific rules

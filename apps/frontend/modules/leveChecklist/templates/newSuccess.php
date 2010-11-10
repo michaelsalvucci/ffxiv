@@ -1,4 +1,4 @@
-<h1>Post an Item</h1>
+<h3>Leve Checklist</h3>
 
-<?php include_partial('form', array('form' => $form)) ?>
+<?php  include_partial('form', array('form' => $form)) ?>
 
